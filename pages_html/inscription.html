@@ -14,37 +14,76 @@
 <nav>
 <a href="index.html">actualité</a> <a href="pages_html/inscription.html">inscription</a> <a href="pages_html/galerie.html">galerie</a>
 </nav>
-<h2> inscription etudiant </h2>
+
 <form>
-    <label for="nom">nom</label>
-    <input type="text" id="nom"> <br>
-    <label for="prenom">prenom</label>
-    <input type="text" id="prenom"><br>
-    <label for="date">date de naissance</label>
-    <input type="date" id="date"><br>
-    <h3>sexe</h3>
-    <input type="radio" id="masculin" name="sexe" value="masculin">
+    
+    <fieldset> <legend> <h1>inscription etudiant</h1></legend> 
+    <table>
+    <tr><td><label for="nom"><h3>nom</h3></label></td>
+    <td><input type="text" id="nom"> <br></td>
+    </tr>
+    <tr>
+    <td>
+    <label for="prenom"><h3>prenom</h3></label></td>
+    <td><input type="text" id="prenom" autofocus><br></td>
+    </tr>
+    <tr>
+    <td><label for="date"><h3>date de naissance</h3></label></td>
+    <td><input type="date" id="date"><br></td>
+    </tr>
+    <tr>
+     <td>   
+    <h3>sexe</h3></td>
+   <td><input type="radio" id="masculin" name="sexe" value="masculin" checked>
   <label for="masculin">masculin</label>
   <input type="radio" id="feminin" name="sexe" value="feminin">
-  <label for="feminin">feminin</label><br>
-  <label for="pays">Pays</label>
 
+  <label for="feminin">feminin</label><br>
+</td> 
+</tr>
+<tr>
+    <td>
+  <label for="pays"><h3>Pays</h3></label>
+</td>
+<td>
 <select name="pays" id="pays">
-  <option value="tunisie">tunisie</option>
-  <option value="france">france</option>
+<option disabled selected>Choisir un pays </option> 
+  <option value="tunisie" selected>tunisie</option>
+<option value="france">france</option>
   <option value="senegal">senegal</option>
   <option value="niger">niger</option>
+</td>
+
 </select><br>
-<h3>langue</h3>
-<input type="checkbox" id="arabe" name="arabe" value="arabe">
+</tr>
+<tr>
+<td><h3>langue</h3></td>
+<td><input type="checkbox" id="arabe" name="arabe" value="arabe">
   <label for="arabe"> arabe</label><br>
   <input type="checkbox" id="francais" name="francais" value="francais">
   <label for="francais"> francais</label><br>
   <input type="checkbox" id="anglais" name="anglais" value="anglais">
   <label for="anglais">anglais</label><br>
-  <label for="myFile"> image</label>
-  <input type=".jpeg" id="myFile" name="filename">
-  <input type="submit">
+</td>
+</tr>
+<tr>
+  <td>
+  <label for="myFile"> <h3>image</h3></label>
+</td>  
+<td>
+  <input type="file" id="myFile" name="filename" accept="image/jpeg"><br>
+</td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <input type="submit" value="Valider">
+    </td>
+</tr>
+
+ 
+</table>
+</fieldset>
 </form>
 
 
